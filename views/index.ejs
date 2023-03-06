@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="container">
+      <h2>Realtime BitCoin calculator</h2>
       <form action="/calculate" method="POST">
         <input
           type="text"
@@ -17,12 +18,19 @@
         />
         <select name="currency">
           <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
           <option value="USD">USD</option>
         </select>
         <button type="submit">Calculate</button>
       </form>
-      <p></p>
-      <p class="disclaimer"></p>
+
+      <% if (data) { %>
+      <p>
+        You've got <span><%= data.worth %> <%= data.code %></span> worth of
+        BitCoins.
+      </p>
+      <p class="disclaimer"><%= data.disclaimer %></p>
+      <% } %>
     </div>
   </body>
 </html>

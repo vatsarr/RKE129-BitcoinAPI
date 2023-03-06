@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: beige;
   font-family: "Poppins", sans-serif;
 }
 
@@ -15,8 +16,30 @@ body {
   margin: 5rem;
 }
 
+h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+select,
+option {
+  font-size: 1.5rem;
+}
+button {
+  font-size: 1.5rem;
+}
+
 p {
+  font-size: 1.3rem;
   margin: 1rem;
+}
+
+span {
+  font-weight: bold;
 }
 
 .disclaimer {
